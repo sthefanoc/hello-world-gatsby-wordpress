@@ -11,6 +11,7 @@ export default function Home({data}) {
         ? 
         (<Post
         image={node.featured_media.source_url}
+        alt={node.featured_media.slug}
         title={node.title}
         excerpt={node.excerpt}
         readMore={node.slug}

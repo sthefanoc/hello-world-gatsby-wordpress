@@ -8,13 +8,15 @@ const PrimaryLayout = (props) => {
         <div>
           <SEO />
           <Header></Header>
-          <div className="container">
-            <div className="row justify-content-md center">
-                <div className={props.column}>
-                    {props.children}
-                </div>
+          <main>
+            <div className="container">
+              <div className="row justify-content-md center">
+                  <div className={props.column}>
+                      {props.children}
+                  </div>
+              </div>
             </div>
-          </div>
+          </main>
           <Footer></Footer>
         </div>
     )
