@@ -7,7 +7,7 @@ const Post =(props) => {
             <div className="p-3">
                 <Card >
                 {props.image
-                ? <Card.Img variant="top" src={props.image} alt={props.alt || 'defaulAlt'} />
+                ? <Card.Img className="img-responsive rounded mh-70" variant="top" src={props.image} alt={props.alt || 'defaulAlt'} />
                 : <br />}
                 
                 <Card.Body>
