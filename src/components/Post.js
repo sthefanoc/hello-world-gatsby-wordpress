@@ -4,7 +4,7 @@ import { Card, Button } from 'react-bootstrap';
 const Post =(props) => {
     return (
         <post>
-            <div className="p-3 ">
+            <div className="p-3">
                 <Card >
                 {props.image
                 ? <Card.Img variant="top" src={props.image} alt={props.alt || 'defaulAlt'} />
