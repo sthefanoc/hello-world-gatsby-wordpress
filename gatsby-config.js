@@ -33,6 +33,18 @@ module.exports = {
       },
     },
     `gatsby-plugin-react-helmet`,
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Gatsby bootstrap wordpress`,
+        short_name: `GatsWordpress`,
+        start_url: `/`,
+        background_color: `#f8f9fa`,
+        theme_color: `#ffffff`,
+        display: `standalone`,
+      },
+    },
+    `gatsby-plugin-offline`
   ]
 }
 
