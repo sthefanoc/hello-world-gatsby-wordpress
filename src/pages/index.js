@@ -6,31 +6,34 @@ import Post from '../components/Post';
 export default function Home({data}) {
   return (
     <PrimaryLayout column="col-xs-6">
-      {data.allMarkdownRemark.nodes.map(node => (
-        <Post
-        image={node.frontmatter.image} 
-        title={node.frontmatter.title}
+      {data.allWordpressPost.nodes.map(node => (
+        Boolean(node.featured_media)
+        ? 
+        (<Post
+        image={node.featured_media.source_url}
+        title={node.title}
         excerpt={node.excerpt}
-        readMore={node.fields.slug}
-        />
+        readMore={node.slug}
+        />)
+        :
+        (<Post
+          title={node.title}
+          excerpt={node.excerpt}
+          readMore={node.slug}
+          />)
       ))}
     </PrimaryLayout>
 )}
 
 export const query = graphql`
 {
-  allMarkdownRemark {
+  allWordpressPost {
     nodes {
-      frontmatter {
-        title
-        date
-        keywords
-        image
-      }
+      slug
+      title
       excerpt
-      html
-      fields {
-        slug
+      featured_media {
+        source_url
       }
     }
   }
