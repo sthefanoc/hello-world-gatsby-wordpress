@@ -35,6 +35,7 @@ export const query = graphql`
       excerpt
       featured_media {
         source_url
+        slug
       }
     }
   }
