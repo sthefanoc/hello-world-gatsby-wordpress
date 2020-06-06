@@ -13,7 +13,7 @@ module.exports = {
     description:"This is an awesome description. And we're going to see more!",
     keywords:"gatsby, great, eay, awesome",
     image:"/static/gatsby.jpg",
-    url:'https://www.gatsbyjs.org/'
+    url:'http://sthefanoc.com/'
   },
   plugins: [
     {
@@ -29,7 +29,7 @@ module.exports = {
     {
       resolve: `gatsby-source-wordpress`,
       options: {
-        baseUrl: `ofertopbrasil.com.br`,
+        baseUrl: `wordpress.sthefanoc.com`,
         protocol: `http`,
         hostingWPCOM: false,
       },
