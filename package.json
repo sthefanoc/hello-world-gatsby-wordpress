@@ -22,7 +22,7 @@
     "gatsby-plugin-sharp": "^2.6.10",
     "gatsby-source-filesystem": "^2.3.10",
     "gatsby-source-wordpress": "^3.3.10",
-    "gatsby-transformer-remark": "^2.8.14",
+    "gatsby-transformer-remark": "^5.25.1",
     "gatsby-transformer-sharp": "^2.5.4",
     "innertext": "^1.0.3",
     "react": "^16.12.0",
